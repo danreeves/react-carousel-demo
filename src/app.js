@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import styled, { injectGlobal } from 'styled-components';
 import Carousel from './carousel';
 
+// These are some global styles
+// the make the page pretty.
 injectGlobal`
   * {
     box-sizing: border-box;

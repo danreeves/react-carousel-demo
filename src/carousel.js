@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Contains the buttons and the slider
+// Keeps them all 100% height and in line
+// with each other 👌
 const CarouselContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -10,12 +13,16 @@ const CarouselContainer = styled.div`
   margin-bottom: 1.5em;
 `;
 
+// Wraps the slider to hide the inactive slides
 const SliderOuter = styled.div`
   overflow: hidden;
   height: ${props => props.height}px;
   width: ${props => props.width}px;
 `;
 
+// Is the width of all the images and
+// sets it's left position -((carousel_width * current_index) - carousel_width)
+// - 1 width because we're 1 indexed so we don't have to worry about * 0
 const SliderInner = styled.div`
   display: block;
   position: relative;
@@ -53,6 +60,7 @@ export default class Carousel extends React.Component {
   }
 
   next() {
+    // Set the index to the next index or the first index
     this.setState(prevState => {
       const nextIndex = prevState.index + 1;
       return {
@@ -63,6 +71,7 @@ export default class Carousel extends React.Component {
   }
 
   prev() {
+    // Set the index to the prev index or the last index
     this.setState(prevState => {
       const nextIndex = prevState.index - 1;
       return {
