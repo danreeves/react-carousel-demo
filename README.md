@@ -6,7 +6,7 @@ Features on display:
 
 ## `Carousel`
 
-`Carousel` is a React component which creates a sliding carousel from the children you pass to it as children.
+`Carousel` is a React component which creates a sliding carousel from the images you pass to it as children.
 
 It has `initialWidth` and `initialHeight` props used to define how big it should be before it's in the browser (and images have loaded or the screen has a size).
 
