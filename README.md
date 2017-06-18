@@ -27,8 +27,9 @@ See `src/carousel.js` to see how it works.
 ### Missing features
 
 1. It's currently not responsive. This could be added in JS with an onResize handler or probably with some smarter CSS.
-2. If the images aren't the same size as the Carousel then they get squashed/stretched. They should maintain their aspect ratio.
-3. It might be nice if the Carousel is automatically resized when the images load. We want an initialHeight/Width so that our server rendered CSS and initial paint has decent blocking but we can't always know the size of images being used.
+2. Touch controls! 👉📱
+3. If the images aren't the same size as the Carousel then they get squashed/stretched. They should maintain their aspect ratio.
+4. It might be nice if the Carousel is automatically resized when the images load. We want an initialHeight/Width so that our server rendered CSS and initial paint has decent blocking but we can't always know the size of images being used.
 
 ---
 
