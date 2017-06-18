@@ -1,9 +1,10 @@
 {
     "presets":[
-        "latest", 
+        "latest",
         "react"
     ],
     "plugins": [
-      "styled-components"
+      "styled-components",
+      "babel-plugin-transform-object-rest-spread"
     ]
 }

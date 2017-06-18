@@ -28,6 +28,8 @@ const Page = styled.div`
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Title = styled.h1`
@@ -35,17 +37,19 @@ const Title = styled.h1`
   margin-top: 1em;
 `;
 
-function App () {
-  return <Page>
-    <Title>React Carousel</Title>
-    <Carousel height={400} width={600}>
-      <img src="https://unsplash.it/600/400/?image=110" />
-      <img src="https://unsplash.it/600/400/?image=220" />
-      <img src="https://unsplash.it/600/400/?image=330" />
-      <img src="https://unsplash.it/600/400/?image=440" />
-      <img src="https://unsplash.it/600/400/?image=550" />
-    </Carousel>
-  </Page>
+function App() {
+  return (
+    <Page>
+      <Title>React Carousel</Title>
+      <Carousel initialHeight={400} initialWidth={600}>
+        <img src="https://unsplash.it/600/400/?image=110" />
+        <img src="https://unsplash.it/600/400/?image=220" />
+        <img src="https://unsplash.it/600/400/?image=330" />
+        <img src="https://unsplash.it/600/400/?image=440" />
+        <img src="https://unsplash.it/600/400/?image=550" />
+      </Carousel>
+    </Page>
+  );
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
